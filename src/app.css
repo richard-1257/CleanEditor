@@ -1,0 +1,18 @@
+.split {
+    display: flex;
+    height: calc(100vh - 115px);
+    overflow: hidden;
+}
+
+.gutter {
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.gutter.gutter-horizontal,
+.gutter.gutter-vertical {
+    cursor: col-resize;
+}
