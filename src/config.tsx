@@ -92,6 +92,7 @@ export const htmlDefaultTemplate2: string = `
 <a href="https://google.com">Go to google</a>
 
 <ul>
+<<<<<<< HEAD
     <li>Unordered Item 1</li>
     <li>Unordered Item 2</li>
     <li>Unordered Item 3</li>
@@ -115,3 +116,28 @@ export const cssDefaultTemplate2: string = `h1 {
   color: green;
 }
 `;
+=======
+  <li>Unordered Item 1</li>
+  <li>Unordered Item 2</li>
+  <li>Unordered Item 3</li>
+  <li>Unordered Item 4</li>
+</ul>
+
+<ol>
+  <li>Unordered Item 1</li>
+  <li>Unordered Item 2</li>
+  <li>Unordered Item 3</li>
+  <li>Unordered Item 4</li>
+</ol>
+    `;
+    export const cssDefaultTemplate: string = `body {
+      margin: 0;
+      padding: 0;
+    }
+    `;
+    
+    export const cssDefaultTemplate2: string = `h1 {
+      color: green;
+    }
+    `;   
+>>>>>>> 93c5dd9facd1121e08dd6b489ea97e9df04f397f
