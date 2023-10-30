@@ -1,10 +1,10 @@
 import MEditor from '@monaco-editor/react';
 import { editorOptions } from '../config';
-import { Context } from '../context';
+import { context } from '../context';
 import { useContext } from 'react';
 
-const EditorPanel = () => {
-  const { state, dispatch } = useContext(Context);
+const EditorBoard = () => {
+  const { state, dispatch } = useContext(context);
   return (
     <div className="h-100 py-1 position-relative">
       <nav>
@@ -37,20 +37,6 @@ const EditorPanel = () => {
               CSS
             </button>
           </li>
-          <li className="nav-item" role="presentation">
-            <button
-              className="nav-link active rounded-0 px-5"
-              id="javascript"
-              data-bs-toggle="tab"
-              data-bs-target="#javascript-pane"
-              type="button"
-              role="tab"
-              aria-controls="javascript-pane"
-              aria-selected="false"
-            >
-              JS
-            </button>
-          </li>
         </ul>
       </nav>
 
@@ -67,11 +53,9 @@ const EditorPanel = () => {
             options={editorOptions}
             height="100%"
             value={state.html}
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             onChange={(value) =>
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              dispatch((prevState: any) => ({
-                ...prevState,
+              dispatch((preState) => ({
+                ...preState,
                 html: value ? value : '',
               }))
             }
@@ -90,35 +74,10 @@ const EditorPanel = () => {
             options={editorOptions}
             height="100%"
             value={state.css}
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             onChange={(value) =>
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              dispatch((prevState: any) => ({
-                ...prevState,
+              dispatch((preState) => ({
+                ...preState,
                 css: value ? value : '',
-              }))
-            }
-            theme={state.theme === 'dark' ? 'vs-dark' : state.theme}
-          />
-        </div>
-        <div
-          className="tab-pane fade h-100"
-          id="javascript-pane"
-          role="tabpanel"
-          aria-labelledby="javascript"
-          tabIndex={0}
-        >
-          <MEditor
-            defaultLanguage="javascript"
-            options={editorOptions}
-            height="100%"
-            value={state.javascript}
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            onChange={(value) =>
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              dispatch((prevState: any) => ({
-                ...prevState,
-                javascript: value ? value : '',
               }))
             }
             theme={state.theme === 'dark' ? 'vs-dark' : state.theme}
@@ -129,4 +88,4 @@ const EditorPanel = () => {
   );
 };
 
-export default EditorPanel;
+export default EditorBoard;

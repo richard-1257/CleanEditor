@@ -1,32 +1,29 @@
 import './App.css';
 import Layout from './layout/Layout';
-import { Context } from './context';
+import { Header } from './components/header';
+import { cssDefaultTemplate2, htmlDefaultTemplate2 } from './config';
+import { context } from './context';
+import { useState } from 'react';
 import { IState } from './model';
-import Header from './components/header';
-import {
-  cssDefaultTemplate2,
-  htmlDefaultTemplate2,
-  javascriptDefaultTemplate2,
-} from './config';
 
 const initialState: IState = {
   html: htmlDefaultTemplate2,
   css: cssDefaultTemplate2,
-  javascript: javascriptDefaultTemplate2,
   theme: 'dark',
 };
 
 function App() {
-  const [state, dispatch] = useLocalStorage('state', initialState);
+  const [state, dispatch] = useState(initialState);
 
+  console.log(state);
   return (
     <div className="App">
       <Header />
 
       <main>
-        <Context.Provider value={{ state, dispatch }}>
+        <context.Provider value={{ state, dispatch }}>
           <Layout />
-        </Context.Provider>
+        </context.Provider>
       </main>
     </div>
   );
