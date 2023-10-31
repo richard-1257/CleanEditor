@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { Context } from '../context';
+import { useContext } from 'react';
+import { context } from '../context';
 import { EditorTheme } from '../model';
 
 export const ThemeSwitcher = () => {
-  const { state, dispatch } = useContext(Context);
+  const { state, dispatch } = useContext(context);
 
   const setTheme = (theme: EditorTheme) => {
     dispatch((prevState) => ({
@@ -12,17 +12,17 @@ export const ThemeSwitcher = () => {
     }));
   };
 
-  return ( 
+  return (
     <div>
       <div className="dropdown">
         <span className="mx-2">Theme </span>
-        <button 
+        <button
           className="btn btn-light dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-         {state.theme}
+          {state.theme}
         </button>
         <ul className="dropdown-menu">
           <li className="dropdown-item" onClick={() => setTheme('dark')}>

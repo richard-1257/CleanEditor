@@ -2,11 +2,15 @@ import MEditor from '@monaco-editor/react';
 import { editorOptions } from '../config';
 import { context } from '../context';
 import { useContext } from 'react';
+import { ThemeSwitcher } from '../components/ThemeSwitcher';
 
 const EditorBoard = () => {
   const { state, dispatch } = useContext(context);
   return (
     <div className="h-100 py-1 position-relative">
+      <div className="position-absolute end-0 me-1">
+        <ThemeSwitcher />
+      </div>
       <nav>
         <ul className="nav nav-tabs" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">

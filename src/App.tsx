@@ -3,8 +3,8 @@ import Layout from './layout/Layout';
 import { Header } from './components/header';
 import { cssDefaultTemplate2, htmlDefaultTemplate2 } from './config';
 import { context } from './context';
-import { useState } from 'react';
 import { IState } from './model';
+import { useLocalStorage } from './hooks/useLocalStorage';
 
 const initialState: IState = {
   html: htmlDefaultTemplate2,
@@ -13,9 +13,8 @@ const initialState: IState = {
 };
 
 function App() {
-  const [state, dispatch] = useState(initialState);
+  const [state, dispatch] = useLocalStorage('state', initialState);
 
-  console.log(state);
   return (
     <div className="App">
       <Header />

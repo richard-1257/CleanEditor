@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
-const PREFIX = 'ms-playground';
+const PREFIX = 'cleaneditor';
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function useLocalStorage(key: string, intialValue: any) {
     const prefixedkey = `${PREFIX}${key}`;
 
