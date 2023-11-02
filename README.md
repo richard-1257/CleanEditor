@@ -1,10 +1,10 @@
 # Clean Editor 
-##-A Monaco Editor for HTML, CSS, and JavaScript Playground
+## A Monaco Editor for HTML, CSS, and JavaScript Playground
 
-##Demo
+## Demo
+
 <a href=”https://drive.google.com/file/d/1-JSuB0-y-izma1YN8xLZ_2zIGfHuQrbp/view?usp=sharing “ target=”blank”>
 
-<img src=”https://www.linkedin.com/posts/obah-sylva-414ab013a_clean-editor-activity-7125803671975571456-Vk5C?utm_source=share&utm_medium=member_android” alt=”Clean Editor” width=”240” height=”180” border=”10” />
 
 Clean Editor is a lightweight, web-based code editor that is designed for editing and testing HTML, CSS, and JavaScript code. It is powered by the Monaco Editor, a powerful code editor that provides features such as syntax highlighting, local storage, code auto completion, and more. Clean Editor is ideal for developers, students, and anyone looking for a simple and clean environment to write and test code.
 
