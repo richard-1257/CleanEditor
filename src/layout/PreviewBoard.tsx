@@ -11,12 +11,13 @@ const PreviewBoard = () => {
                 <html>
                     <style>${state.css}</style>
                     <body>${state.html}</body>
+                    <script>${state.javascript}</script>
                 </html>    
                 `;
       setSrcDoc(srcDoc);
     }, 1000);
     return () => clearTimeout(timeout);
-  }, [state.html, state.css]);
+  }, [state.html, state.css, state.javascript]);
   return (
     <div className="p-3 border-bottom mx-1 w-100">
       <iframe srcDoc={srcDoc} title="output" width="100%" height="100%" />

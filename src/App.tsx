@@ -10,6 +10,7 @@ const initialState: IState = {
   html: htmlDefaultTemplate2,
   css: cssDefaultTemplate2,
   theme: 'dark',
+  javascript: '',
 };
 
 function App() {

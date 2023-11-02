@@ -115,3 +115,11 @@ export const cssDefaultTemplate2: string = `h1 {
   color: green;
 }
 `;
+
+export const javascriptDefaultTemplate: string = `
+document.getElementById("demo").style.fontSize = "35px";
+`;
+
+export const javascriptDefaultTemplate2: string = `
+document.getElementById("demo").innerHTML = "Hello JavaScript";
+`;
