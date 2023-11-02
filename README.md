@@ -22,7 +22,7 @@ Clean Editor is a lightweight, web-based code editor that is designed for editin
 
 To start using Clean Editor, follow these simple steps:
 
-1. Visit the Clean Editor website at [https://cleaneeditor.com]
+1. Visit the Clean Editor website at [https://sylvan452.github.io/cleaneditor/]
 
 2. You will be presented with a clean and simple code editor interface.
 
