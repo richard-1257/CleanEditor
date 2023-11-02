@@ -66,7 +66,7 @@ If you have any questions or would like to get in touch, you can reach out to an
 Obah Sylva : sylvan452@gmail.com - [**Obah Sylva Github**](https://github.com/Sylvan452).
 Richard Ifeanyi Caleb : richardsifeanyi@gmail.com -  [**Richard Ifeanyi Github**](https://github.com/richard-1257).
 Ezeah Tobechukwu John : johntobez@gmail.com -  [**Ezeah Tobechukwu Github**](https://github.com/Tobezz).
-Merit Gloria Ogudu : gmerit2030@gmail.com -  [**Merit Gloria Github**](https://www.npmjs.com/package/apidoc).
+Merit Gloria Ogudu : gmerit2030@gmail.com -  [**Merit Gloria Github**](https://github.com/G-Merich).
 
 
 Happy coding with Clean Editor!
