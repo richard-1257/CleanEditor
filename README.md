@@ -63,10 +63,10 @@ Clean Editor is built on top of the Monaco Editor by Microsoft, and we would lik
 Clean Editor is maintained and developed by a group of passionate developers. It was created to provide a simple, distraction-free environment for writing and testing HTML, CSS, and JavaScript code.
 
 If you have any questions or would like to get in touch, you can reach out to any member of our team at:
-Obah Sylva : sylvan452@gmail.com
-Richard Ifeanyi Caleb : richardsifeanyi@gmail.com
-Ezeah Tobechukwu John : johntobez@gmail.com
-Merit Gloria Ogudu : gmerit2030@gmail.com
+Obah Sylva : sylvan452@gmail.com - [**Obah Sylva Github**](https://github.com/Sylvan452).
+Richard Ifeanyi Caleb : richardsifeanyi@gmail.com -  [**Richard Ifeanyi Github**](https://github.com/richard-1257).
+Ezeah Tobechukwu John : johntobez@gmail.com -  [**Ezeah Tobechukwu Github**](https://github.com/Tobezz).
+Merit Gloria Ogudu : gmerit2030@gmail.com -  [**Merit Gloria Github**](https://github.com/G-Merich).
 
 
 Happy coding with Clean Editor!
